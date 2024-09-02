@@ -19,10 +19,11 @@ from single_period import SinglePeriod
 
 @click.command()
 @click.option('-s', '--stocks', multiple=True, type=str, 
-              default=['AAPL', 'MSFT', 'AAL', 'WMT'], show_default=True,
+              default=['AAPL', 'MSFT', 'NVDA', 'AMZN', 'META', 'GOOG', 'LLY', 'AVGO', 'JPM', 'UNH'],
+              show_default=True,
               help='Stock name to be included.'
               'When a file is provided, stock name must be included in the file ')
-@click.option('-b', '--budget', default=1000, show_default=True,
+@click.option('-b', '--budget', default=15000, show_default=True,
               help='Portfolio budget')
 @click.option('-n', '--bin-size', type=int,
               help='Maximum number of intervals for each stock. This a DQM-only option.')

@@ -63,7 +63,7 @@ class MultiPeriod(SinglePeriod):
             min_return (int): Minimum return for the CQM return bounding formulation.
         """
         if not self.dates:
-            self.dates = ['2010-01-01', '2012-12-31']
+            self.dates = ['2023-07-31', '2024-07-31']
         self.load_data()
 
         num_months = len(self.df_all)
